@@ -1,0 +1,25 @@
+.smileyActive{
+	width:120px;
+	height:120px;
+	margin:15px;
+}
+.smileyInactive{
+	width:30px;
+	height:30px;
+}
+
+.questionAndAnswer{
+	
+}
+
+.questionActive{
+
+}
+
+.questionInactive{
+	color:grey;
+}
+
+.answer{
+
+}

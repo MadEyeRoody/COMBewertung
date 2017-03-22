@@ -3,13 +3,13 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Index</title>
-	<link rel="stylesheet" href="public/css/bootstrap.css">
+	<link rel="stylesheet" href="public/css/bootstrap.min.css">
 	<script type="text/javascript" src="public/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="public/js/bootstrap.js"></script>
+	<script type="text/javascript" src="public/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<script type="text/javascript" >
-        $.getJSON("public/data/questions.json", function (obj) {
+          $.getJSON("public/data/questions.json", function (obj) {
             for(var station in obj){
                 var a = document.createElement("a");
                 a.setAttribute("href","einzel.html?station="+station);

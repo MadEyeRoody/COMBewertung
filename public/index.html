@@ -1,22 +1,23 @@
 <html>
 <head>
-	<meta charset="ISO-8859-1">
+	<meta charset="UTF-8">
 	<title>Index</title>
 	<link rel="stylesheet" href="public/css/bootstrap.min.css">
+	<script type="text/javascript" src="public/data/questions.json"></script>
 	<script type="text/javascript" src="public/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="public/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<script type="text/javascript" >
-          $.getJSON("public/data/questions.json", function (obj) {
+		    var obj = JSON.parse(questions);
             for(var station in obj){
                 var a = document.createElement("a");
                 a.setAttribute("href","einzel.html?station="+station);
                 a.innerHTML=station;
                 document.body.appendChild(a);
-                document.body.appendChild(document.createElement("br"));
-			}
-        });
+                document.body.appendChild(document.createElement("br"));}
+
+
 	</script>
 </body>
 </html> 

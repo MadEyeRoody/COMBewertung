@@ -1,8 +1,13 @@
 var http = require('http');
+fs = require('fs');
 
-http.createServer(function (req, res) {
-    
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('Hello, world!');
-    
-}).listen(process.env.PORT || 8080);
+fs.readFile('public/index.html', function (err, html) {
+    if (err) {
+        throw err;
+    }
+    http.createServer(function(request, response) {
+        response.writeHeader(200, {"Content-Type": "text/html"});
+        response.write(html);
+        response.end();
+    }).listen(8000);
+});

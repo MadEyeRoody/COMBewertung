@@ -3,22 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Index</title>
-	<link rel="stylesheet" href="public/css/bootstrap.min.css">
-	<script type="text/javascript" src="public/data/questions.json"></script>
-	<script type="text/javascript" src="public/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
 <body>
 	<script type="text/javascript" >
-		    var obj = JSON.parse(questions);
+        $.getJSON("data/questions.json", function (obj) {
             for(var station in obj){
                 var a = document.createElement("a");
                 a.setAttribute("href","einzel.html?station="+station);
                 a.innerHTML=station;
                 document.body.appendChild(a);
-                document.body.appendChild(document.createElement("br"));}
-
-
+                document.body.appendChild(document.createElement("br"));
+			}
+        });
 	</script>
 </body>
 </html> 

@@ -5,11 +5,11 @@
 	<title>Index</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="public/js/bootstrap.js"></script>
 </head>
 <body>
 	<script type="text/javascript" >
-        $.getJSON("questions.json", function (obj) {
+        $.getJSON("public/data/questions.json", function (obj) {
             for(var station in obj){
                 var a = document.createElement("a");
                 a.setAttribute("href","einzel.html?station="+station);

@@ -1,6 +1,6 @@
 var classQuestionActive = "questionActive h1";
 var classQuestionInactive = "questionInactive h4";
-
+var request = require('request');
 var station;
 var answers=[
 	"keine",
@@ -99,6 +99,7 @@ function reloadPageAfterMillis(millis) {
 }
 
 function showThanks() {
+
 	$('#thanksModal').modal({
 		backdrop : 'static',
 		keyboard : false
@@ -108,20 +109,17 @@ function showThanks() {
 }
 function sendAnswer() {
     console.log("sendAnswer called");
-	$.ajax({
-	    type: "POST",
-	    url: 'db.php',
-	    data: {stationName: station, answers: givenAnswers},
-        error: function (error)
-        {
-			document.getElementById("thanksText").innerHTML=error;
-        },
-	    success: function (data) {
-            reloadPageAfterMillis(3000);
-            document.getElementById("thanksText").innerHTML=data;
-		}
 
-	});
+	request.post(
+		'http://combewertung.azurewebsites.net/speichereBewertung',
+		{stationName: station, answers: givenAnswers},
+		function (error, response, body) {
+			if (!error && response.statusCode == 200) {
+				console.log(body)
+			}
+		}
+	);
+
 }
 function lastQuestion(id) {
 	return id == questions[station].length - 1;

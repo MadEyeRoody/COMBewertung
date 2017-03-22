@@ -1,6 +1,5 @@
 var classQuestionActive = "questionActive h1";
 var classQuestionInactive = "questionInactive h4";
-var request = require('request');
 var station;
 var answers=[
 	"keine",

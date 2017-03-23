@@ -9,7 +9,7 @@
 </head>
 <body>
 	<script type="text/javascript" >
-        $.getJSON("data/questions.json", function (obj) {
+        $.getJSON("public/data/questions.json", function (obj) {
             for(var station in obj){
                 var a = document.createElement("a");
                 a.setAttribute("href","einzel.html?station="+station);

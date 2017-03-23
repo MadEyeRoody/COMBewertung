@@ -5,20 +5,9 @@ const collection = 'combewertung';
 var MongoClient = require("mongodb").MongoClient;
 var mongodb;
 
-var fs = require('fs');
-var util = require('util');
-var log_file = fs.createWriteStream('logs/debug.log', {flags : 'w'});
-var log_stdout = process.stdout;
-
-console.log = function(d) { //
-    log_file.write(util.format(d) + '\n');
-    log_stdout.write(util.format(d) + '\n');
-};
-app.listen(process.env.PORT || 8080);
-
-app.get('/', function(req, res) {
+http.createServer(function (req, res) {
     res.redirect('index.html');
-});
+}).listen(process.env.PORT || 8080);
 
 
 app.get('speichereBewertung', function (req, res) {
@@ -40,4 +29,5 @@ app.get('speichereBewertung', function (req, res) {
     );
 
 })
+app.listen(process.env.PORT || 8080);
 

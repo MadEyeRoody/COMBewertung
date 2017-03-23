@@ -17,7 +17,7 @@ console.log = function(d) { //
 
 
 app.get('/', function(req, res) {
-    res.redirect('public/index.html');
+    res.redirect('index.html');
 });
 
 

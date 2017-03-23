@@ -15,12 +15,11 @@ app.post('/api/speichereBewertung', function (req, res) {
             if (err) {
                 console.log(err);
             } else {
-                db.collection(collection).insertOne(JSON.stringify(req), function(error, result) {
+                db.collection(collection).insertOne(req, function(error, result) {
                     if (error) {
                         console.log(error);
                     } else {
                         console.log(result);
-                        res.end("success")
                     }
                 });
             }

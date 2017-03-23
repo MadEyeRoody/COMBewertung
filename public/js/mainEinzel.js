@@ -109,16 +109,6 @@ function showThanks() {
 function sendAnswer() {
     console.log("sendAnswer called");
 
-/*	request.post(
-		'http://combewertung.azurewebsites.net/speichereBewertung',
-		{stationName: station, answers: givenAnswers},
-		function (error, response, body) {
-			if (!error && response.statusCode == 200) {
-				console.log(body)
-			}
-		}
-	);*/
-
 	var xhr = new XMLHttpRequest();
 	xhr.open("POST", "http://combewertung.azurewebsites.net/speichereBewertung", true);
 	xhr.setRequestHeader('Content-Type', 'application/json');

@@ -1,9 +1,11 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
 const collection = 'combewertung';
 var MongoClient = require("mongodb").MongoClient;
 
-
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.get('/', function(req, res) {
     res.redirect('index.html');
 });
@@ -20,6 +22,7 @@ app.post('/api/speichereBewertung', function (req, res) {
                         console.log(error);
                     } else {
                         console.log(result);
+                        res.json({message: "success"})
                     }
                 });
             }

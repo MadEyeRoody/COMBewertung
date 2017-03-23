@@ -113,6 +113,7 @@ function sendAnswer() {
     xhr.send(JSON.stringify({
         stationName: station, answers: givenAnswers
     }));
+    return;
 }
 function lastQuestion(id) {
 	return id == questions[station].length - 1;

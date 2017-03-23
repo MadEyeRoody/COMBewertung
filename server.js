@@ -17,11 +17,11 @@ console.log = function(d) { //
 
 
 app.get('/', function(req, res) {
-    res.redirect('index.html');
+    res.redirect('public/index.html');
 });
 
 
-app.get('/speichereBewertung', function (req, res) {
+app.get('api/speichereBewertung', function (req, res) {
     MongoClient.connect("mongodb://combewertung:3dKmkmTw6kh2KIkbpZ2R6aYVpVYSatM2fjK41V0fSxrsAlzS1mvKW9tWn5nqi2r3Kp34Qnm1ebxnaJQem3ximQ==@combewertung.documents.azure.com:10250/?ssl=true",
         function(err, db) {
             if (err) {

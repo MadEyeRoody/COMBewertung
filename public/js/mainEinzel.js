@@ -109,7 +109,7 @@ function showThanks() {
 function sendAnswer() {
     console.log("sendAnswer called");
 
-    require(["request"],function(request){
+ /*   require(["request"],function(request){
 	request.post(
 		'http://combewertung.azurewebsites.net/speichereBewertung',
 		{stationName: station, answers: givenAnswers},
@@ -119,7 +119,14 @@ function sendAnswer() {
 			}
 		}
 	);
-    });
+    });*/
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://combewertung.azurewebsites.net/speichereBewertung", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+        stationName: station, answers: givenAnswers
+    }));
 }
 function lastQuestion(id) {
 	return id == questions[station].length - 1;

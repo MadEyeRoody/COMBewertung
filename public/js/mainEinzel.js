@@ -110,15 +110,9 @@ function sendAnswer() {
     xhr.open("POST", "http://combewertung.azurewebsites.net/api/speichereBewertung", true);
     //xhr.open("POST", "http://localhost:8080/speichereBewertung", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState == XMLHttpRequest.DONE) {
-            alert(xhr.responseText);
-        }
-    }
     xhr.send(JSON.stringify({
         stationName: station, answers: givenAnswers
     }));
-    xhr.getRes
 }
 function lastQuestion(id) {
 	return id == questions[station].length - 1;

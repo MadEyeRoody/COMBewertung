@@ -109,7 +109,6 @@ function sendAnswer() {
     $.ajax({
         type: "POST",
         url: 'http://combewertung.azurewebsites.net/api/speichereBewertung',
-        dataType: 'application/json',
         contentType: "application/json",
         data: {stationName: station, answers: givenAnswers},
         error: function (error)

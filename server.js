@@ -22,7 +22,7 @@ app.post('/api/speichereBewertung', function (req, res) {
                         console.log(error);
                     } else {
                         console.log(result);
-                        res.json({message: "success"})
+                        res.sendStatus(200);
                     }
                 });
             }

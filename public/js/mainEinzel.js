@@ -109,6 +109,7 @@ function sendAnswer() {
     $.ajax({
         type: "POST",
         url: 'http://combewertung.azurewebsites.net/api/speichereBewertung',
+        dataType: 'application/json',
         contentType: "application/json",
         data: {stationName: station, answers: givenAnswers},
         error: function (error)
@@ -117,7 +118,7 @@ function sendAnswer() {
         },
         success: function (data) {
             reloadPageAfterMillis(2000);
-            document.getElementById("thanksText").innerHTML="Vielen Dank für Ihre Teilname!"
+            document.getElementById("thanksText").innerHTML="Vielen Dank für Ihre Teilnahme!"
         }
 
     });

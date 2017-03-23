@@ -1,19 +1,7 @@
 var express = require('express');
 var app = express();
 const collection = 'combewertung';
-
 var MongoClient = require("mongodb").MongoClient;
-var mongodb;
-
-var fs = require('fs');
-var util = require('util');
-var log_file = fs.createWriteStream('logs/debug.log', {flags : 'w'});
-var log_stdout = process.stdout;
-
-console.log = function(d) { //
-    log_file.write(util.format(d) + '\n');
-    log_stdout.write(util.format(d) + '\n');
-};
 
 
 app.get('/', function(req, res) {
@@ -27,7 +15,7 @@ app.post('/api/speichereBewertung', function (req, res) {
             if (err) {
                 console.log(err);
             } else {
-                db.collection(collection).insertOne(req, function(error, result) {
+                db.collection(collection).insertOne(JSON.stringify(req), function(error, result) {
                     if (error) {
                         console.log(error);
                     } else {

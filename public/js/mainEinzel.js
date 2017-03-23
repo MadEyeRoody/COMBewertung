@@ -107,8 +107,8 @@ function sendAnswer() {
     console.log("sendAnswer called");
 
     var xhr = new XMLHttpRequest();
-    //xhr.open("POST", "http://combewertung.azurewebsites.net/api/speichereBewertung", true);
-    xhr.open("POST", "http://localhost:8080/speichereBewertung", true);
+    xhr.open("POST", "http://combewertung.azurewebsites.net/api/speichereBewertung", true);
+    //xhr.open("POST", "http://localhost:8080/speichereBewertung", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function() {
         if (xhr.readyState == XMLHttpRequest.DONE) {

@@ -14,8 +14,7 @@ console.log = function(d) { //
     log_file.write(util.format(d) + '\n');
     log_stdout.write(util.format(d) + '\n');
 };
-app.listen(8080);
-console.log("Server running on port 80")
+app.listen(process.env.PORT || 8080);
 
 app.get('/', function(req, res) {
     res.redirect('index.html');

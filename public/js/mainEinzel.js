@@ -7,10 +7,7 @@ var answers=[
 	"mittel",
 	"negativ"
 ];
-//var questionsSarabi = [ "Wie finden Sie Sarabi?", "Wie gefällt Ihnen die Bedienung?", "Was ist der Sinn des Lebens?" ];
-//var questions = {
-//	sarabi : questionsSarabi
-//};
+
 var questions;
 var givenAnswers =[];
 

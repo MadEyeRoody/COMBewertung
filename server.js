@@ -1,6 +1,5 @@
 var express = require('express');
 var app = express();
-dbService = require('./services/dbService').db;
 const collection = 'combewertung';
 
 

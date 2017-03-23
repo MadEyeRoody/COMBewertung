@@ -7,9 +7,10 @@
   },
   "license": "Apache",
   "engines": {
-    "node": "~0.10.0 || ~6.3.1"
+    "node": "~6.3.1"
   },
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "mongodb": "^2.2.25"
   }
 }

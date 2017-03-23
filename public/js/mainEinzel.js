@@ -106,30 +106,19 @@ function showThanks() {
 function sendAnswer() {
     console.log("sendAnswer called");
 
-    $.ajax({
-        type: "POST",
-        url: 'http://combewertung.azurewebsites.net/api/speichereBewertung',
-        dataType: 'application/json',
-        contentType: "application/json",
-        data: {stationName: station, answers: givenAnswers},
-        error: function (error)
-        {
-            console.log(error);
-        },
-        success: function (data) {
-            reloadPageAfterMillis(2000);
-            document.getElementById("thanksText").innerHTML="Vielen Dank für Ihre Teilnahme!"
-        }
-
-    });
-
-   /* var xhr = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
     xhr.open("POST", "http://combewertung.azurewebsites.net/api/speichereBewertung", true);
     //xhr.open("POST", "http://localhost:8080/speichereBewertung", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+            reloadPageAfterMillis(2000);
+            document.getElementById("thanksText").innerHTML="Vielen Dank für Ihre Teilnahme!"
+        }
+    }
     xhr.send(JSON.stringify({
         stationName: station, answers: givenAnswers
-    }));*/
+    }));
 }
 function lastQuestion(id) {
 	return id == questions[station].length - 1;

@@ -14,10 +14,11 @@ console.log = function(d) { //
     log_file.write(util.format(d) + '\n');
     log_stdout.write(util.format(d) + '\n');
 };
-app.listen(80);
+//app.listen(8080);
 console.log("Server running on port 80")
+
 app.get('/', function(req, res) {
-    res.redirect('/public/index.html');
+    res.redirect('index.html');
 });
 
 

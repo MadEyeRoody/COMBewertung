@@ -8,13 +8,16 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
 <body>
-<h1>zu den Fragebögen:</h1>
+
 	<script type="text/javascript" >
         $.getJSON("data/questions.json", function (obj) {
             for(var station in obj){
                 var a = document.createElement("a");
                 a.setAttribute("href","einzel.html?station="+station+"+windowed");
                 a.innerHTML=obj[station].stand;
+				var head = document.createElement(h1)
+				head.setContent("zu den Fragebögen:")
+				document.body.appendChild(head)
                 document.body.appendChild(a);
                 document.body.appendChild(document.createElement("br"));
 			}

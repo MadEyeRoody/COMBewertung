@@ -45,15 +45,12 @@ app.get('/api/getBewertung', function (req, res) {
                     if (err) {
                         console.log(err);
                     } else {
-                        console.log(docs);
-                        console.log(req.query.id)
-                        console.log(docs[2].stationShort)
                         for (var id=0;docs.length>id;id++){
                             if(docs[id].stationShort== req.query.id){
                                 resDocs.push(docs[id]);
                             }
                         }
-                        console.log(resDocs);
+
 
                         var positiv=0;
                         var mittel=0;
@@ -64,6 +61,7 @@ app.get('/api/getBewertung', function (req, res) {
                         for (var item in resDocs){
                             console.log(item)
                             for(var answer in item){
+                                console.log(answer)
                                 if(answer.answer =="positiv"){
                                     positiv= positiv+1;
                                 }

@@ -46,22 +46,20 @@ app.get('/api/getBewertung', function (req, res) {
                         console.log(err);
                     } else {
                         for (var id=0;docs.length>id;id++){
-                            if(docs[id].stationShort== req.query.id){
+                            if(docs[id]['stationShort']== req.query.id){
                                 resDocs.push(docs[id]);
                             }
                         }
 
-
-                        var positiv=0;
-                        var mittel=0;
-                        var negativ=0;
-                        var keine=0;
                         var gesamt=0;
 
-                        for (var item in resDocs){
-                            console.log(item)
+                        for (var j =0;resDocs.length>j;j++){
+                            var positiv=0;
+                            var mittel=0;
+                            var negativ=0;
+                            var keine=0;
+                            var item = resDocs[j].answers
                             for (var i=0;item.length>i;i++) {
-                                console.log(item[i].answer)
                                 if(item[i].answer =="positiv"){
                                     positiv= positiv+1;
                                 }

@@ -8,6 +8,7 @@ var answers=[
 	"negativ"
 ];
 var stationTitle;
+var stationShort;
 var questions;
 var givenAnswers =[];
 
@@ -117,7 +118,7 @@ function sendAnswer() {
         }
     }
     xhr.send(JSON.stringify({
-        stationId: station, name: stationTitle ,answers: givenAnswers
+        stationId: station,stationShort:stationShort, name: stationTitle ,answers: givenAnswers
     }));
 }
 function lastQuestion(id) {
@@ -158,6 +159,7 @@ window.onload = function main() {
             stationTitle=obj[station].titel;
         document.body.header=stationTitle;
         document.title=stationTitle;
+			stationShort = obj[station].stand;
             questions=obj[station].questions;
             var id = 0;
              for ( var question in questions) {

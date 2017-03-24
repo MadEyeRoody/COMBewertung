@@ -50,11 +50,8 @@ app.get('/api/getBewertung', function (req, res) {
                         //console.log(docs[0].stationShort)
                         var id = 0;
                         for (var doc in docs){
-                            var docJSON = doc.parseJSON
-                            console.log(docJSON)
-                            doc[0]
-                            if(doc.stationShort== req.query.id){
-                                resDocs.push(doc[id]);
+                            if(docs[id].stationShort== req.query.id){
+                                resDocs.push(docs[id]);
                             }
                         }
                         console.log(resDocs);

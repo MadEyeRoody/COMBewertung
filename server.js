@@ -42,10 +42,10 @@ app.get('/api/getBewertung', function (req, res) {
                 console.log(err);
             } else {
                 db.collection(collection).find().toArray(function(err, docs) {
-                    if (error) {
-                        console.log(error);
+                    if (err) {
+                        console.log(err);
                     } else {
-                        console.log(result);
+                        console.log(docs);
 
                         var id = 0;
                         for (var doc in docs){

@@ -78,7 +78,6 @@ app.get('/api/getBewertung', function (req, res) {
 
                             responses.push({
                                 frage:answer.question,
-                                gesamt: gesamt,
                                 positiv:positiv,
                                 mittel:mittel,
                                 negativ:negativ,
@@ -86,7 +85,7 @@ app.get('/api/getBewertung', function (req, res) {
                             })
                         }
 
-                        var resJSON= {name:resDocs[0].name, responses: responses};
+                        var resJSON= {name:resDocs[0].name, gesamt: gesamt, responses: responses};
 
 
                         res.send(resJSON);

@@ -14,7 +14,7 @@ function getQueryVariable(variable) {
     alert('Query Variable ' + variable + ' not found');
 }
 
-indow.onload = function main() {
+window.onload = function main() {
     station = getQueryVariable("station");
 
 

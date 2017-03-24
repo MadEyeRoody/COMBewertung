@@ -58,19 +58,19 @@ app.get('/api/getBewertung', function (req, res) {
                         var keine=0;
                         var gesamt=0;
 
-                        for (var i =0;resDocs.length>i;i++){
-                            for(var answer in item){
+                        for (var item in resDocs){
+                            for(var i=0;i>item.length,i++){
                                 console.log(answer)
-                                if(answer.answer =="positiv"){
+                                if(item[i].answer =="positiv"){
                                     positiv= positiv+1;
                                 }
-                                if(answer.answer =="mittel"){
+                                if(item[i].answer =="mittel"){
                                     mittel= mittel+1;
                                 }
-                                if(answer.answer =="negativ"){
+                                if(item[i].answer =="negativ"){
                                     negativ= negativ+1;
                                 }
-                                if(answer.answer =="positiv"){
+                                if(item[i].answer =="positiv"){
                                     keine= keine+1;
                                 }
                                 gesamt = gesamt+1;

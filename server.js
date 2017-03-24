@@ -45,7 +45,7 @@ app.get('/api/getBewertung', function (req, res) {
                     if (err) {
                         console.log(err);
                     } else {
-                        for (var id=0;docs.length>id;id++){
+                        for (var id=0;docs.length>=id;id++){
                             if(docs[id].stationShort== req.query.id){
                                 resDocs.push(docs[id]);
                             }
@@ -58,8 +58,7 @@ app.get('/api/getBewertung', function (req, res) {
                         var keine=0;
                         var gesamt=0;
 
-                        for (var item in resDocs){
-                            console.log(item)
+                        for (var i =0;resDocs.length>i;i++){
                             for(var answer in item){
                                 console.log(answer)
                                 if(answer.answer =="positiv"){

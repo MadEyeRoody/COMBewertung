@@ -61,7 +61,7 @@ app.get('/api/getBewertung', function (req, res) {
                         for (var item in resDocs){
                             console.log(item)
                             for (var i=0;item.length>i;i++) {
-                                console.log(item[i])
+                                console.log(item[i].answer)
                                 if(item[i].answer =="positiv"){
                                     positiv= positiv+1;
                                 }

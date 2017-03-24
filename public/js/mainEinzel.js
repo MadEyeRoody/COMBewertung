@@ -7,7 +7,7 @@ var answers=[
 	"mittel",
 	"negativ"
 ];
-
+var stationTitle;
 var questions;
 var givenAnswers =[];
 
@@ -82,7 +82,7 @@ function doAnswer(id, answerIndex) {
 
 function saveAnswerLocal(id, answerIndex){
 	var newAnswer={
-		question:questions[station][id],
+		question:questions[id],
 		answer:answers[answerIndex]
 	};
 	givenAnswers.push(newAnswer);
@@ -117,11 +117,11 @@ function sendAnswer() {
         }
     }
     xhr.send(JSON.stringify({
-        stationName: station, answers: givenAnswers
+        stationId: station, name: stationTitle ,answers: givenAnswers
     }));
 }
 function lastQuestion(id) {
-	return id == questions[station].length - 1;
+	return id == questions.length - 1;
 }
 
 function fadeInNewQuestion(id) {
@@ -153,13 +153,16 @@ function fadeOutAnsweredQuestion(id, answerIndex) {
 
 window.onload = function main() {
 	station = getQueryVariable("station");
-    document.title=station;
+
     $.getJSON("data/questions.json", function (obj) {
-        questions=obj;
-        var id = 0;
-        for ( var questionIndex in questions[station]) {
-            addQuestion(questions[station][questionIndex], id);
-            id++;
-        }
+            stationTitle=obj[station].titel;
+        document.body.header=stationTitle;
+        document.title=stationTitle;
+            questions=obj[station].questions;
+            var id = 0;
+             for ( var question in questions) {
+                 addQuestion(questions[id], id);
+              id++;
+          }
     });
 };

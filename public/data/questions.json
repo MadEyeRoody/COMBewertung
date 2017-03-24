@@ -1,67 +1,20 @@
-{
-  "Von_der_Idee_zum_Produkt-Innovationsarbeit_in_der_Fiducia_GAD":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Wünschen Sie sich mehr Informationen dieser Art auch in Zukunft?"
-  ],
-	"VR-Organizer-Mehr_als_nur_Dokumentenmanagement":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],
-	"Sarabi-Ihr_Vertrauensassistent":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],
-	"VR-AltersvorsorgeCockpit-Einfach_übersichtlich_und_unkompliziert_modern.":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],
-	"Digitale_Regionalbank-Perspektiven_auf_das_Banking_von_morgen!":[
+[
+  {
+    "stand": "Stand1_Sarabi",
+    "titel": "Von der Idee zum Produkt Innovationsarbeit in der Fiducia GAD",
+    "questions": [
+      "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+      "Wünschen Sie sich mehr Informationen dieser Art auch in Zukunft?"
+    ]
+  },
+  {
+  "stand": "Stand2_Organizer",
+  "titel": "VR-Organizer-Mehr_als_nur_Dokumentenmanagement",
+  "questions":[
     "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],
-	"Leihen_unter_Freunden-GWYN-Die_GenoSharing_Plattform!":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],
-	"Banking_on_the_road.Meine_Bank_fährt_mit!":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],
-	"Peergroup_Banking-Was_machen_ähnliche_Kunden?Ein_Smart_Data_Ansatz":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],
-	"Customer_Advisor_ChatBot_und_kognitive_Systeme_im_Kundenservice":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],	
-	"Sendbote-Deine_Meinung_zählt!":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],	
-	"Simple_Banking-Virtuelle_Konten&Gesamtfinanzstatus":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],	
-	"youba-Generation_Z_auf_dem_Weg_ins_Banking":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],	
-	"Bezahlen_Sie_mit_Ihrem_guten_Namen-Hier_und_jetzt!":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],	
-	"Immobilienbewertung_für_Jedermann_einfach_und_schnell":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],	
-	"Innovation_in_a_box":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ],	
-	"Geld_senden&anfordern-Bezahllösung_für_Geschäftskunden":[
-    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ]	
+  ]
+
 }
+  ]
 

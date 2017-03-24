@@ -2,10 +2,10 @@ var classQuestionActive = "questionActive h1";
 var classQuestionInactive = "questionInactive h4";
 var station;
 var answers=[
-	"keine",
 	"positiv",
 	"mittel",
-	"negativ"
+	"negativ",
+	"keine"
 ];
 var stationTitle;
 var stationShort;
@@ -44,7 +44,7 @@ function createAnswerDiv(id) {
 		var linkButton = document.createElement("a");
 		linkButton.setAttribute("href", "#");
 		var buttonImg = document.createElement("img");
-		buttonImg.setAttribute("src", "img/smiley" + i + ".png");
+		buttonImg.setAttribute("src", "img/smiley_" + answers[i] + ".png");
 		buttonImg.className = "smileyInactive";
 		if (id == 0) {
 			buttonImg.className = "smileyActive";
@@ -141,8 +141,8 @@ function fadeOutAnsweredQuestion(id, answerIndex) {
 	var answersalt = document.getElementById("answerContainer" + id).children;
 	for (var index = 0; index < 4; index++) {
 		if (index != answerIndex) {
-			answersalt[index].children[0].setAttribute("src", "img/smileyGrey"
-					+ (index) + ".png");
+			answersalt[index].children[0].setAttribute("src", "img/smileyGrey_"
+					+ answers[(index)] + ".png");
 
 		}
 		answersalt[index].removeAttribute("onClick");
@@ -157,7 +157,7 @@ window.onload = function main() {
 
     $.getJSON("data/questions.json", function (obj) {
             stationTitle=obj[station].titel;
-        document.body.header=stationTitle;
+		document.getElementById("standName").innerHTML=stationTitle;
         document.title=stationTitle;
 			stationShort = obj[station].stand;
             questions=obj[station].questions;

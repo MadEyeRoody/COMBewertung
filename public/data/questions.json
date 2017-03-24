@@ -1,12 +1,13 @@
 [
   {
-    "stand": "Stand1_Sarabi",
+    "stand": "Stand1_Innovationsarbeit",
     "titel": "Von der Idee zum Produkt Innovationsarbeit in der Fiducia GAD",
     "questions": [
       "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
       "Wünschen Sie sich mehr Informationen dieser Art auch in Zukunft?"
     ]
   },
+ 
   {
   "stand": "Stand2_Organizer",
   "titel": "VR-Organizer-Mehr_als_nur_Dokumentenmanagement",
@@ -14,7 +15,133 @@
     "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
   ]
+	},
 
-}
+	{
+  "stand": "Stand3_AV_Cockpit",
+  "titel": "VR-AltersvorsorgeCockpit - Einfach übersichtlich und unkompliziert modern.",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+
+	{
+  "stand": "Stand4_AV_Sarabi",
+  "titel": "Sarabi - Ihr Vertrauensassistent",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+
+	{
+  "stand": "Stand5_DigitaleRegionalbank",
+  "titel": "Digitale Regionalbank - Perspektiven auf das Banking von morgen!",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand6_GWYN",
+  "titel": "Leihen unter Freunden - GWYN - Die GenoSharing Plattform!",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand7_CarBanking",
+  "titel": "Banking on the road. Meine Bank fährt mit!",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand8_PeerGroup",
+  "titel": "Peergroup Banking - Was machen ähnliche Kunden? Ein Smart Data Ansatz",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand9_CustomerAdvisor",
+  "titel": "Customer Advisor ChatBot und kognitive Systeme im Kundenservice",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand10_Sendbote",
+  "titel": "Sendbote - Deine Meinung zählt!",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand11_SimpleBanking",
+  "titel": "Simple Banking - Virtuelle Konten & Gesamtfinanzstatus",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand12_youba",
+  "titel": "youba - Generation Z auf dem Weg ins Banking",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand13_GuterName",
+  "titel": "Bezahlen Sie mit Ihrem guten Namen - Hier und jetzt!",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand14_BewertungsApp",
+  "titel": "Immobilienbewertung für Jedermann einfach und schnell",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand15_InnoBox",
+  "titel": "Innovation in a box",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand16_GSA",
+  "titel": "Geld senden & anfordern - Bezahllösung für Geschäftskunden",
+  "questions":[
+    "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	}
+	
   ]
 

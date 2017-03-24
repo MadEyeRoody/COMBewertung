@@ -3,6 +3,8 @@ var bodyParser = require('body-parser');
 var app = express();
 const collection = 'combewertung';
 var MongoClient = require("mongodb").MongoClient;
+var resDocs;
+var responses;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -24,8 +26,10 @@ app.post('/api/speichereBewertung', function (req, res) {
                         console.log(result);
                         res.send(200);
                     }
+                    db.close;
                 });
             }
+
         }
     );
 
@@ -37,15 +41,63 @@ app.get('/api/getBewertung', function (req, res) {
             if (err) {
                 console.log(err);
             } else {
-                db.collection(collection).distinct( req.query.id  , function(error, result) {
+                db.collection(collection).find().toArray(function(err, docs) {
                     if (error) {
                         console.log(error);
                     } else {
                         console.log(result);
-                        res.send(result);
+
+                        var id = 0;
+                        for (var doc in docs){
+                            if(doc[id].stationShort= req.query.id){
+                                resDocs.append(doc[id]);
+                            }
+                        }
+
+                        var positiv=0;
+                        var mittel =0;
+                        var negativ =0;
+                        var keine =0;
+                        var gesamt =0;
+
+                        for (var item in resDocs){
+                            for(var answer in item){
+                                if(answer.answer =="positiv"){
+                                    positiv= positiv+1;
+                                }
+                                if(answer.answer =="mittel"){
+                                    mittel= mittel+1;
+                                }
+                                if(answer.answer =="negativ"){
+                                    negativ= negativ+1;
+                                }
+                                if(answer.answer =="positiv"){
+                                    keine= keine+1;
+                                }
+                                gesamt = gesamt+1;
+                            }
+
+                            responses.append({
+                                frage:answer.question,
+                                gesamt: gesamt,
+                                positiv:positiv,
+                                mittel:mittel,
+                                negativ:negativ,
+                                keine:keine
+                            })
+                        }
+
+                        var resJSON= {name:resDocs[0].name};
+                        resJSON.append(responses);
+
+
+                        res.send(resJSON);
                     }
+
+                    db.close();
                 });
             }
+
         }
     );
 

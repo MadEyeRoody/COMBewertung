@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
 <body>
+<h1>zu den Fragebögen:</h1>
 	<script type="text/javascript" >
         $.getJSON("data/questions.json", function (obj) {
             for(var station in obj){
@@ -19,5 +20,18 @@
 			}
         });
 	</script>
+</br></br>
+<h1>zu den Auswertungen:</h1>
+<script type="text/javascript" >
+	$.getJSON("data/questions.json", function (obj) {
+		for(var station in obj){
+			var a = document.createElement("a");
+			a.setAttribute("href","auswertung.html?station="+station);
+			a.innerHTML=obj[station].stand;
+			document.body.appendChild(a);
+			document.body.appendChild(document.createElement("br"));
+		}
+	});
+</script>
 </body>
 </html> 

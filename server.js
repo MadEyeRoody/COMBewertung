@@ -46,7 +46,6 @@ app.get('/api/getBewertung', function (req, res) {
                         console.log(err);
                     } else {
                         console.log(docs);
-                        console.log(req.query.id)
                         console.log(docs[0].stationShort)
                         var id = 0;
                         for (var doc in docs){

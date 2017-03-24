@@ -3,8 +3,8 @@ var bodyParser = require('body-parser');
 var app = express();
 const collection = 'combewertung';
 var MongoClient = require("mongodb").MongoClient;
-var resDocs;
-var responses;
+var resDocs = [];
+var responses= [];
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -50,7 +50,7 @@ app.get('/api/getBewertung', function (req, res) {
                         var id = 0;
                         for (var doc in docs){
                             if(doc[id].stationShort= req.query.id){
-                                resDocs.append(doc[id]);
+                                resDocs.push(doc[id]);
                             }
                         }
 
@@ -77,7 +77,7 @@ app.get('/api/getBewertung', function (req, res) {
                                 gesamt = gesamt+1;
                             }
 
-                            responses.append({
+                            responses.push({
                                 frage:answer.question,
                                 gesamt: gesamt,
                                 positiv:positiv,
@@ -88,7 +88,7 @@ app.get('/api/getBewertung', function (req, res) {
                         }
 
                         var resJSON= {name:resDocs[0].name};
-                        resJSON.append(responses);
+                        resJSON.push(responses);
 
 
                         res.send(resJSON);

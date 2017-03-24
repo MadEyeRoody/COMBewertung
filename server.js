@@ -47,11 +47,12 @@ app.get('/api/getBewertung', function (req, res) {
                     } else {
                         console.log(docs);
                         console.log(req.query.id)
-                        console.log(docs[0].stationShort)
+                        //console.log(docs[0].stationShort)
                         var id = 0;
                         for (var doc in docs){
                             var docJSON = doc.parseJSON
                             console.log(docJSON)
+                            doc[0]
                             if(doc.stationShort== req.query.id){
                                 resDocs.push(doc[id]);
                             }
@@ -59,10 +60,10 @@ app.get('/api/getBewertung', function (req, res) {
                         console.log(resDocs);
 
                         var positiv=0;
-                        var mittel =0;
-                        var negativ =0;
-                        var keine =0;
-                        var gesamt =0;
+                        var mittel=0;
+                        var negativ=0;
+                        var keine=0;
+                        var gesamt=0;
 
                         for (var item in resDocs){
                             console.log(item)

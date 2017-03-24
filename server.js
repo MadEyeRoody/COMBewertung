@@ -17,7 +17,7 @@ app.post('/api/speichereBewertung', function (req, res) {
             if (err) {
                 console.log(err);
             } else {
-                db.collection(collection).insertOne({ stationShort: req.query.id }, function(error, result) {
+                db.collection(collection).insertOne(req.body, function(error, result) {
                     if (error) {
                         console.log(error);
                     } else {
@@ -37,7 +37,7 @@ app.get('/api/getBewertung', function (req, res) {
             if (err) {
                 console.log(err);
             } else {
-                db.inventory.find( req.body , function(error, result) {
+                db.collection(collection).distinct( req.query.id  , function(error, result) {
                     if (error) {
                         console.log(error);
                     } else {

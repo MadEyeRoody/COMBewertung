@@ -59,6 +59,7 @@ app.get('/api/getBewertung', function (req, res) {
                         var gesamt=0;
 
                         for (var item in resDocs){
+                            console.log(item)
                             for (var i=0;i>item.length;i++) {
                                 console.log(item[i])
                                 if(item[i].answer =="positiv"){
@@ -77,7 +78,7 @@ app.get('/api/getBewertung', function (req, res) {
                             }
 
                             responses.push({
-                                frage:answer.question,
+                                frage:item.question,
                                 positiv:positiv,
                                 mittel:mittel,
                                 negativ:negativ,

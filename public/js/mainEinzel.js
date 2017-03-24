@@ -12,6 +12,17 @@ var stationShort;
 var questions;
 var givenAnswers =[];
 
+var query = window.location.search.substring(1);
+var vars = query.split("&");
+for (var i = 0; i < vars.length; i++) {
+	var pair = vars[i].split("+");
+	if (pair[1] == "windowed") {
+		window.open('einzel.html?'+pair[0],'windowName','toolbar=no');
+		javascript:window.history.back();
+	}
+}
+
+
 function addQuestion(question, id) {
 	var divContainer = document.getElementById("questionContainer");
 	var divQuestionAndAnswer = document.createElement("div");

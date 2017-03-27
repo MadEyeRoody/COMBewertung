@@ -42,7 +42,7 @@ function getQueryVariable(variable) {
 }
 
 window.onload = function main() {
-    var station = getQueryVariable("id");
+    var station = getQueryVariable("station");
 
 
     $.get(

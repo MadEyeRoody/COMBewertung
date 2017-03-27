@@ -1,4 +1,4 @@
-var classQuestionActive = "questionActive h1";
+var classQuestionActive = "questionActive h2";
 var classQuestionInactive = "questionInactive h4";
 var station;
 var answers=[
@@ -26,7 +26,7 @@ for (var i = 0; i < vars.length; i++) {
 function addQuestion(question, id) {
 	var divContainer = document.getElementById("questionContainer");
 	var divQuestionAndAnswer = document.createElement("div");
-	var divQuestion = document.createElement("h2");
+	var divQuestion = document.createElement("div");
 	var divAnswer = createAnswerDiv(id);
 
 	divQuestionAndAnswer.className = "questionAndAnswer";

@@ -36,6 +36,8 @@ app.post('/api/speichereBewertung', function (req, res) {
 })
 
 app.get('/api/getBewertung', function (req, res) {
+    resDocs=[];
+    responses=[];
     MongoClient.connect("mongodb://combewertung:3dKmkmTw6kh2KIkbpZ2R6aYVpVYSatM2fjK41V0fSxrsAlzS1mvKW9tWn5nqi2r3Kp34Qnm1ebxnaJQem3ximQ==@combewertung.documents.azure.com:10250/?ssl=true",
         function(err, db) {
             if (err) {
@@ -45,6 +47,7 @@ app.get('/api/getBewertung', function (req, res) {
                     if (err) {
                         console.log(err);
                     } else {
+                        resDocs=[];
                         for (var id=0;docs.length>id;id++){
                             if(docs[id]['stationShort']== req.query.id){
                                 resDocs.push(docs[id]);

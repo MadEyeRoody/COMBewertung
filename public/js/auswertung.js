@@ -3,29 +3,28 @@
  */
 
 
-function addResults(question, id) {
-    var divContainer = document.getElementById("questionContainer");
-    var divQuestionAndAnswer = document.createElement("div");
-    var divQuestion = document.createElement("div");
-    var divAnswer = createAnswerDiv(id);
+function addResults(result,gesamt) {
+    var divContainer = document.getElementById("resultContainer");
 
-    divQuestionAndAnswer.className = "questionAndAnswer";
-    divQuestion.className = classQuestionInactive;
-    divAnswer.className = "answer";
+    var divResult = document.createElement("div");
 
-    if (id == 0) {
-        divQuestion.className = classQuestionActive;
-    }
+    var h3Question = document.createElement("h3");
+    h3Question.innerHTML=result.frage;
+    divResult.appendChild(h3Question);
 
-    divQuestionAndAnswer.setAttribute("id", "questionAndAnswer" + id);
-    divQuestion.setAttribute("id", "question" + id);
+    var quotaPositiv = ((result.positiv/gesamt)*100).toFixed(2);
+    var quotaMittel = ((result.mittel/gesamt)*100).toFixed(2);
+    var quotaNegaitv = ((result.negativ/gesamt)*100).toFixed(2);
+    var quotaKeine = ((result.keine/gesamt)*100).toFixed(2);
 
-    divQuestion.innerHTML = question;
+    var pQuota = document.createElement("p");
+    pQuota.innerHTML= "davon Positiv "+ result.positiv+" ("+quotaPositiv+"%) </br></br>" +
+        "davon Mittel "+ result.mittel+" ("+quotaMittel+"%) </br></br>" +
+        "davon Negativ "+ result.negativ+" ("+quotaNegaitv+"%) </br></br>" +
+        "davon keine Antwort "+ result.keine+" ("+quotaKeine+"%) </br></br>"
 
-    divQuestionAndAnswer.appendChild(divQuestion);
-    divQuestionAndAnswer.appendChild(divAnswer);
-
-    divContainer.appendChild(divQuestionAndAnswer);
+    divResult.appendChild(pQuota);
+    divContainer.appendChild(divResult);
 }
 
 
@@ -46,11 +45,15 @@ window.onload = function main() {
 
 
     $.get(
-        "http://combewertung.azurewebsites.net/api/getBewertung?id="+station,
-        {paramOne : 1, id : station},
+        "http://combewertung.azurewebsites.net/api/getBewertung",
+        {id : station},
         function(data) {
             document.getElementById("standName").innerHTML=data.name;
-            connsole.log(data);
+            document.getElementById("gesamtAnzahl").innerHTML="Antworten Gesamt: "+data.gesamt;
+            for( var result in data.responses){
+                addResults(data.responses[result],data.gesamt)
+            }
+
         }
     );
 

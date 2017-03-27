@@ -26,7 +26,7 @@ for (var i = 0; i < vars.length; i++) {
 function addQuestion(question, id) {
 	var divContainer = document.getElementById("questionContainer");
 	var divQuestionAndAnswer = document.createElement("div");
-	var divQuestion = document.createElement("div");
+	var divQuestion = document.createElement("h2");
 	var divAnswer = createAnswerDiv(id);
 
 	divQuestionAndAnswer.className = "questionAndAnswer";

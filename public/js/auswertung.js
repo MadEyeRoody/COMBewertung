@@ -50,6 +50,7 @@ window.onload = function main() {
         {paramOne : 1, id : station},
         function(data) {
             document.getElementById("standName").innerHTML=data.name;
+            connsole.log(data);
         }
     );
 

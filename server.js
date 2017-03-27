@@ -91,7 +91,7 @@ app.get('/api/getBewertung', function (req, res) {
 
                         }
 
-                        var resJSON= {name:resDocs[0].name, gesamt: gesamt, responses: responses};
+                        var resJSON= {name:resDocs[0].name, gesamt: gesamt/2, responses: responses};
 
 
                         res.send(resJSON);

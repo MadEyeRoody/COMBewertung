@@ -50,7 +50,7 @@ window.onload = function main() {
         function(data) {
             document.getElementById("standName").innerHTML=data.name;
             document.getElementById("gesamtAnzahl").innerHTML="Antworten Gesamt: "+data.gesamt;
-            document.title("Auswertung");
+            document.title="Auswertung";
             for( var result in data.responses){
                 addResults(data.responses[result],data.gesamt)
             }

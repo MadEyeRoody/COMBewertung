@@ -16,7 +16,7 @@
             for(var station in obj){
             	var questionDiv = document.getElementById("fragen");
                 var a = document.createElement("a");
-                a.setAttribute("href","einzel.html?station="+station+"+windowed");
+                a.setAttribute("href","einzel.html?station="+station);
                 a.innerHTML=obj[station].stand;
                 questionDiv.appendChild(a);
                 questionDiv.appendChild(document.createElement("br"));

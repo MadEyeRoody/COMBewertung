@@ -1,4 +1,4 @@
-var classQuestionActive = "questionActive h2";
+var classQuestionActive = "questionActive h1";
 var classQuestionInactive = "questionInactive h4";
 var station;
 var answers=[

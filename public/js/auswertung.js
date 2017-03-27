@@ -58,18 +58,4 @@ window.onload = function main() {
         }
     );
 
-
-/*
-    $.getJSON("data/questions.json", function (obj) {
-        stationTitle=obj[station].titel;
-        document.getElementById("standName").innerHTML=stationTitle;
-        document.title=stationTitle;
-        stationShort = obj[station].stand;
-        questions=obj[station].questions;
-        var id = 0;
-        for ( var question in questions) {
-            addQuestion(questions[id], id);
-            id++;
-        }
-    });*/
 };

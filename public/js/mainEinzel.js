@@ -21,6 +21,18 @@ for (var i = 0; i < vars.length; i++) {
 		javascript:window.history.back();
 	}
 }
+function enterFullscreen(element) {
+	if(element.requestFullscreen) {
+		element.requestFullscreen();
+	} else if(element.mozRequestFullScreen) {
+		element.mozRequestFullScreen();
+	} else if(element.msRequestFullscreen) {
+		element.msRequestFullscreen();
+	} else if(element.webkitRequestFullscreen) {
+		element.webkitRequestFullscreen();
+	}
+}
+
 
 
 function addQuestion(question, id) {
@@ -120,7 +132,6 @@ function sendAnswer() {
 
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "http://combewertung.azurewebsites.net/api/speichereBewertung", true);
-    //xhr.open("POST", "http://localhost:8080/speichereBewertung", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function() {
         if (xhr.readyState == XMLHttpRequest.DONE) {
@@ -164,6 +175,8 @@ function fadeOutAnsweredQuestion(id, answerIndex) {
 }
 
 window.onload = function main() {
+	enterFullscreen(document.documentElement);
+
 	station = getQueryVariable("station");
 
     $.getJSON("data/questions.json", function (obj) {
@@ -172,10 +185,8 @@ window.onload = function main() {
         document.title=stationTitle;
 			stationShort = obj[station].stand;
             questions=obj[station].questions;
-            var id = 0;
              for ( var question in questions) {
-                 addQuestion(questions[id], id);
-              id++;
+                 addQuestion(questions[question], question);
           }
     });
 };

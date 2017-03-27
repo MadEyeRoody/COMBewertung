@@ -21,18 +21,6 @@ for (var i = 0; i < vars.length; i++) {
 		javascript:window.history.back();
 	}
 }
-function enterFullscreen(element) {
-	if(element.requestFullscreen) {
-		element.requestFullscreen();
-	} else if(element.mozRequestFullScreen) {
-		element.mozRequestFullScreen();
-	} else if(element.msRequestFullscreen) {
-		element.msRequestFullscreen();
-	} else if(element.webkitRequestFullscreen) {
-		element.webkitRequestFullscreen();
-	}
-}
-
 
 
 function addQuestion(question, id) {
@@ -175,8 +163,6 @@ function fadeOutAnsweredQuestion(id, answerIndex) {
 }
 
 window.onload = function main() {
-	enterFullscreen(document.documentElement);
-
 	station = getQueryVariable("station");
 
     $.getJSON("data/questions.json", function (obj) {

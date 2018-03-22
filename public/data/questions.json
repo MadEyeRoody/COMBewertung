@@ -3,14 +3,23 @@
     "stand": "Stand1_Innovationsarbeit",
     "titel": "Von der Idee zum Produkt Innovationsarbeit in der Fiducia GAD",
     "questions": [
-      "Wie bewerten Sie Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-      "Wünschen Sie sich mehr Informationen dieser Art auch in Zukunft?"
+      "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+      "Mehr Informationen dieser Art auch in Zukunft?"
     ]
   },
  
   {
-  "stand": "Stand2_Organizer",
-  "titel": "VR-Organizer - Mehr als nur Dokumentenmanagement",
+  "stand": "Stand2_Kreativmethoden",
+  "titel": "Kreativmethoden - Ein Überblick mit Tipps und Praxisbezug",
+  "questions":[
+    "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Mehr Formate dieser Art auch in Zukunft"
+  ]
+	},
+
+	{
+  "stand": "Stand3_Digitale_Plattform",
+  "titel": "Digitale Plattform - Genossenschaft digital denken - neue Geschäftsmodelle entwickeln",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -18,8 +27,8 @@
 	},
 
 	{
-  "stand": "Stand3_AV_Cockpit",
-  "titel": "VR-AltersvorsorgeCockpit - Einfach übersichtlich und unkompliziert modern.",
+  "stand": "Stand4_genosharing",
+  "titel": "genosharing - einfach leihen und verleihen",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -27,17 +36,8 @@
 	},
 
 	{
-  "stand": "Stand4_AV_Sarabi",
-  "titel": "Sarabi - Ihr Vertrauensassistent",
-  "questions":[
-    "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
-    "Einsatz in meiner Bank / für meine Kunden denkbar?"
-  ]
-	},
-
-	{
-  "stand": "Stand5_DigitaleRegionalbank",
-  "titel": "Digitale Regionalbank - Perspektiven auf das Banking von morgen!",
+  "stand": "Stand5_Botto",
+  "titel": "Botto - Der intelligente Chatbot - für Ihre fachlichen Fragen",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -45,8 +45,8 @@
 	},
 	
 	{
-  "stand": "Stand6_GWYN",
-  "titel": "Leihen unter Freunden - GWYN - Die GenoSharing Plattform!",
+  "stand": "Stand6_kiu",
+  "titel": "kiu - Sprich mit Deinem Konto!",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -54,8 +54,8 @@
 	},
 	
 	{
-  "stand": "Stand7_CarBanking",
-  "titel": "Banking on the road. Meine Bank fährt mit!",
+  "stand": "Stand7_VRida_und_VRodo",
+  "titel": "VRida und VRodo - Humanoide Roboter im Banking - Innovative Einsatzszenarien",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -63,8 +63,8 @@
 	},
 	
 	{
-  "stand": "Stand8_PeerGroup",
-  "titel": "Peergroup Banking - Was machen ähnliche Kunden? Ein Smart Data Ansatz",
+  "stand": "Stand8_scan_and_deliver",
+  "titel": "Scan & Deliver - Das Beste aus On- und Offline Shopping - Scannen, bezahlen, liefern lassen",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -72,8 +72,8 @@
 	},
 	
 	{
-  "stand": "Stand9_CustomerAdvisor",
-  "titel": "Customer Advisor ChatBot und kognitive Systeme im Kundenservice",
+  "stand": "Stand9_SimpleBanking",
+  "titel": "Simple Banking - Sparziele und Gesamtfinanzstatus auf einen Blick",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -81,8 +81,8 @@
 	},
 	
 	{
-  "stand": "Stand10_Sendbote",
-  "titel": "Sendbote - Deine Meinung zählt!",
+  "stand": "Stand10_EasyPay",
+  "titel": "Easy Pay - Bezahlen am mobilen POS Terminal",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -90,8 +90,8 @@
 	},
 	
 	{
-  "stand": "Stand11_SimpleBanking",
-  "titel": "Simple Banking - Virtuelle Konten & Gesamtfinanzstatus",
+  "stand": "Stand11_Du_bist_die_Karte",
+  "titel": ""Wissen zahlt sich aus" - "Du bist die Karte"",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -99,8 +99,8 @@
 	},
 	
 	{
-  "stand": "Stand12_youba",
-  "titel": "youba - Generation Z auf dem Weg ins Banking",
+  "stand": "Stand12_13_Additive_Fertigung",
+  "titel": "Additive Fertigung - Globale Auswirkung, regionale Chancen ergreifen!",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -108,8 +108,8 @@
 	},
 	
 	{
-  "stand": "Stand13_GuterName",
-  "titel": "Bezahlen Sie mit Ihrem guten Namen - Hier und jetzt!",
+  "stand": "Stand14_VR_Steuererklaerung",
+  "titel": "VR -Steuererklärung - Steuererklärung für Privatkunden - Einfach in 15 Minuten",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -117,8 +117,8 @@
 	},
 	
 	{
-  "stand": "Stand14_BewertungsApp",
-  "titel": "Immobilienbewertung für Jedermann einfach und schnell",
+  "stand": "Stand15_CertifyMe",
+  "titel": "CertifyMe! Vertrauen stärken! Bonität senden und empfangen",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -126,8 +126,8 @@
 	},
 	
 	{
-  "stand": "Stand15_InnoBox",
-  "titel": "Innovation in a box",
+  "stand": "Stand16_Simpleria",
+  "titel": "Simpleria - Einfache Vertrags- und Vermögensverwaltung für Bankkunden",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"
@@ -135,8 +135,26 @@
 	},
 	
 	{
-  "stand": "Stand16_GSA",
-  "titel": "Geld senden & anfordern - Bezahllösung für Geschäftskunden",
+  "stand": "Stand17_kryptotank",
+  "titel": "kryptotank - Ihr sicheres Wallet",
+  "questions":[
+    "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+	
+	{
+  "stand": "Stand18_Roboter_Sophia",
+  "titel": "Roboter Sophia - Künstliche Intelligenz wird menschlich",
+  "questions":[
+    "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
+    "Einsatz in meiner Bank / für meine Kunden denkbar?"
+  ]
+	},
+		
+	{
+  "stand": "Stand19_Virtual_Promoter",
+  "titel": "Virtual Promoter - Ergebnisse aus dem 1. Azubi Hackathon",
   "questions":[
     "Inhalt und Nutzen für Ihre Bank / Ihre Kunden?",
     "Einsatz in meiner Bank / für meine Kunden denkbar?"

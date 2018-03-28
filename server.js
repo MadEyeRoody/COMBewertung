@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-const collection = 'combewertung';
+const collection = 'combewertungneu';
 var MongoClient = require("mongodb").MongoClient;
 var resDocs = [];
 var responses=[];

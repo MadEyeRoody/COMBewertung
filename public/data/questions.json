@@ -1,7 +1,7 @@
 [
   {
     "stand": "Stand1_Innovationsarbeit",
-    "titel": "Von der Idee zum Produkt Innovationsarbeit in der Fiducia GAD",
+    "titel": "Von der Idee zum Produkt Innovationsarbeit in der Fiducia & GAD",
     "questions": [
       "Inhalt und Nutzen für Bank / Kunde?",
       "Mehr Formate dieser Art auch in Zukunft?"
@@ -39,10 +39,13 @@
   "stand": "Stand5_Botto",
   "titel": "Botto - Der intelligente Chatbot - für Ihre fachlichen Fragen",
   "questions":[
-    "Inhalt und Nutzen für Bank / Kunde?",
+    "Wie gefällt Ihnen der Name Botto?"
+    "Wie gefällt Ihnen der Avatar?"
+    "Wie gefällt Ihnen das Oberflächendesign?"
+        "Inhalt und Nutzen für Bank?",
     "Wow, bitte umsetzen!"
-  ]
-	},
+      ]
+	}, 
 	
 	{
   "stand": "Stand6_kiu",

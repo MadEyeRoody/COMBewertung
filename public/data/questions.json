@@ -39,9 +39,9 @@
   "stand": "Stand5_Botto",
   "titel": "Botto - Der intelligente Chatbot - für Ihre fachlichen Fragen",
   "questions":[
-    "Wie gefällt Ihnen der Name Botto?"
-    "Wie gefällt Ihnen der Avatar?"
-    "Wie gefällt Ihnen das Oberflächendesign?"
+    "Wie gefällt Ihnen der Name Botto?",
+    "Wie gefällt Ihnen der Avatar?",
+    "Wie gefällt Ihnen das Oberflächendesign?",
         "Inhalt und Nutzen für Bank?",
     "Wow, bitte umsetzen!"
       ]
